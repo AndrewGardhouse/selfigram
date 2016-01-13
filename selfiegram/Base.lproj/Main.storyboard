@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="icc-jN-Tm5">
             <objects>
-                <viewController id="tbd-lK-cvp" sceneMemberID="viewController">
+                <viewController id="tbd-lK-cvp" customClass="ProfileViewController" customModule="selfiegram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KBV-VF-kPt"/>
                         <viewControllerLayoutGuide type="bottom" id="veC-Xc-kNl"/>
@@ -16,9 +17,43 @@
                     <view key="view" contentMode="scaleToFill" id="b29-7x-TvP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="uQA-PX-Tsb">
+                                <rect key="frame" x="210" y="110" width="180" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="D8C-PC-Kns"/>
+                                    <constraint firstAttribute="height" constant="185" id="Gtx-sq-N1J"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EZ-2b-X6h">
+                                <rect key="frame" x="210" y="303" width="46" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButtonPressed:" destination="tbd-lK-cvp" eventType="touchUpInside" id="HZf-MX-ax3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnm-9y-USo">
+                                <rect key="frame" x="262" y="325" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.30347841664001474" green="1" blue="0.2542368067994234" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3EZ-2b-X6h" firstAttribute="top" secondItem="uQA-PX-Tsb" secondAttribute="bottom" constant="8" id="7zz-av-OBS"/>
+                            <constraint firstItem="uQA-PX-Tsb" firstAttribute="leading" secondItem="3EZ-2b-X6h" secondAttribute="trailing" constant="-46" id="EBx-GV-Tha"/>
+                            <constraint firstItem="jnm-9y-USo" firstAttribute="centerX" secondItem="b29-7x-TvP" secondAttribute="centerX" id="Elm-cd-rYL"/>
+                            <constraint firstItem="uQA-PX-Tsb" firstAttribute="top" secondItem="KBV-VF-kPt" secondAttribute="bottom" constant="46" id="HWV-R7-FuP"/>
+                            <constraint firstItem="uQA-PX-Tsb" firstAttribute="centerX" secondItem="b29-7x-TvP" secondAttribute="centerX" id="Xk8-7C-vOS"/>
+                            <constraint firstItem="jnm-9y-USo" firstAttribute="top" secondItem="b29-7x-TvP" secondAttribute="topMargin" constant="325" id="ovo-c1-Dva"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ya5-ME-LpI"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="uQA-PX-Tsb" id="oV0-S7-tLB"/>
+                        <outlet property="usernameLabel" destination="jnm-9y-USo" id="WJR-DJ-kll"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JyR-Ls-OLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

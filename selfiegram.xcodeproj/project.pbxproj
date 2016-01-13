@@ -14,6 +14,7 @@
 		C672263A1C3F5B6900FAABB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67226381C3F5B6900FAABB5 /* LaunchScreen.storyboard */; };
 		C67226451C3F5B6900FAABB5 /* selfiegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67226441C3F5B6900FAABB5 /* selfiegramTests.swift */; };
 		C67226501C3F5B6900FAABB5 /* selfiegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C672264F1C3F5B6900FAABB5 /* selfiegramUITests.swift */; };
+		C6A4910F1C45FFFA00C0383C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A4910E1C45FFFA00C0383C /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C672264B1C3F5B6900FAABB5 /* selfiegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfiegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C672264F1C3F5B6900FAABB5 /* selfiegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfiegramUITests.swift; sourceTree = "<group>"; };
 		C67226511C3F5B6900FAABB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A4910E1C45FFFA00C0383C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				C672262F1C3F5B6900FAABB5 /* AppDelegate.swift */,
 				C67226311C3F5B6900FAABB5 /* ViewController.swift */,
+				C6A4910E1C45FFFA00C0383C /* ProfileViewController.swift */,
 				C67226331C3F5B6900FAABB5 /* Main.storyboard */,
 				C67226361C3F5B6900FAABB5 /* Assets.xcassets */,
 				C67226381C3F5B6900FAABB5 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A4910F1C45FFFA00C0383C /* ProfileViewController.swift in Sources */,
 				C67226321C3F5B6900FAABB5 /* ViewController.swift in Sources */,
 				C67226301C3F5B6900FAABB5 /* AppDelegate.swift in Sources */,
 			);
@@ -487,6 +491,7 @@
 				C67226561C3F5B6900FAABB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C67226571C3F5B6900FAABB5 /* Build configuration list for PBXNativeTarget "selfiegramTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				C67226591C3F5B6900FAABB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C672265A1C3F5B6900FAABB5 /* Build configuration list for PBXNativeTarget "selfiegramUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				C672265C1C3F5B6900FAABB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
