@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C66A68611C48B22900D00E31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A68601C48B22900D00E31 /* User.swift */; };
+		C66A68631C48B3D600D00E31 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A68621C48B3D600D00E31 /* Post.swift */; };
 		C67226301C3F5B6900FAABB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C672262F1C3F5B6900FAABB5 /* AppDelegate.swift */; };
 		C67226321C3F5B6900FAABB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67226311C3F5B6900FAABB5 /* ViewController.swift */; };
 		C67226351C3F5B6900FAABB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67226331C3F5B6900FAABB5 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C66A68601C48B22900D00E31 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C66A68621C48B3D600D00E31 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C672262C1C3F5B6900FAABB5 /* selfiegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfiegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C672262F1C3F5B6900FAABB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C67226311C3F5B6900FAABB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		C67226231C3F5B6900FAABB5 = {
 			isa = PBXGroup;
 			children = (
+				C66A68601C48B22900D00E31 /* User.swift */,
+				C66A68621C48B3D600D00E31 /* Post.swift */,
 				C672262E1C3F5B6900FAABB5 /* selfiegram */,
 				C67226431C3F5B6900FAABB5 /* selfiegramTests */,
 				C672264E1C3F5B6900FAABB5 /* selfiegramUITests */,
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C66A68611C48B22900D00E31 /* User.swift in Sources */,
 				C6A4910F1C45FFFA00C0383C /* ProfileViewController.swift in Sources */,
 				C67226321C3F5B6900FAABB5 /* ViewController.swift in Sources */,
 				C67226301C3F5B6900FAABB5 /* AppDelegate.swift in Sources */,
+				C66A68631C48B3D600D00E31 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
