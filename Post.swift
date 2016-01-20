@@ -14,7 +14,7 @@ class Post {
     let comment: String
     let user: User
     
-    init(image: UIImage, comment: String, user: User) {
+    init(image: UIImage, user: User, comment: String) {
         self.image = image
         self.comment = comment
         self.user = user

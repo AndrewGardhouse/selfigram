@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C63EECE11C4F063700794002 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63EECE01C4F063700794002 /* FeedViewController.swift */; };
 		C66A68611C48B22900D00E31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A68601C48B22900D00E31 /* User.swift */; };
 		C66A68631C48B3D600D00E31 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A68621C48B3D600D00E31 /* Post.swift */; };
 		C67226301C3F5B6900FAABB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C672262F1C3F5B6900FAABB5 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C63EECE01C4F063700794002 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		C66A68601C48B22900D00E31 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C66A68621C48B3D600D00E31 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C672262C1C3F5B6900FAABB5 /* selfiegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfiegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				C67226311C3F5B6900FAABB5 /* ViewController.swift */,
 				C6A4910E1C45FFFA00C0383C /* ProfileViewController.swift */,
 				C67226331C3F5B6900FAABB5 /* Main.storyboard */,
+				C63EECE01C4F063700794002 /* FeedViewController.swift */,
 				C67226361C3F5B6900FAABB5 /* Assets.xcassets */,
 				C67226381C3F5B6900FAABB5 /* LaunchScreen.storyboard */,
 				C672263B1C3F5B6900FAABB5 /* Info.plist */,
@@ -272,6 +275,7 @@
 				C6A4910F1C45FFFA00C0383C /* ProfileViewController.swift in Sources */,
 				C67226321C3F5B6900FAABB5 /* ViewController.swift in Sources */,
 				C67226301C3F5B6900FAABB5 /* AppDelegate.swift in Sources */,
+				C63EECE11C4F063700794002 /* FeedViewController.swift in Sources */,
 				C66A68631C48B3D600D00E31 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
