@@ -18,6 +18,7 @@
 		C67226451C3F5B6900FAABB5 /* selfiegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67226441C3F5B6900FAABB5 /* selfiegramTests.swift */; };
 		C67226501C3F5B6900FAABB5 /* selfiegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C672264F1C3F5B6900FAABB5 /* selfiegramUITests.swift */; };
 		C6A4910F1C45FFFA00C0383C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A4910E1C45FFFA00C0383C /* ProfileViewController.swift */; };
+		C6EA954D1C51CE7100DAA302 /* SelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EA954C1C51CE7100DAA302 /* SelfieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		C672264F1C3F5B6900FAABB5 /* selfiegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfiegramUITests.swift; sourceTree = "<group>"; };
 		C67226511C3F5B6900FAABB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6A4910E1C45FFFA00C0383C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C6EA954C1C51CE7100DAA302 /* SelfieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelfieCell.swift; path = ../SelfieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				C6A4910E1C45FFFA00C0383C /* ProfileViewController.swift */,
 				C67226331C3F5B6900FAABB5 /* Main.storyboard */,
 				C63EECE01C4F063700794002 /* FeedViewController.swift */,
+				C6EA954C1C51CE7100DAA302 /* SelfieCell.swift */,
 				C67226361C3F5B6900FAABB5 /* Assets.xcassets */,
 				C67226381C3F5B6900FAABB5 /* LaunchScreen.storyboard */,
 				C672263B1C3F5B6900FAABB5 /* Info.plist */,
@@ -273,6 +276,7 @@
 			files = (
 				C66A68611C48B22900D00E31 /* User.swift in Sources */,
 				C6A4910F1C45FFFA00C0383C /* ProfileViewController.swift in Sources */,
+				C6EA954D1C51CE7100DAA302 /* SelfieCell.swift in Sources */,
 				C67226321C3F5B6900FAABB5 /* ViewController.swift in Sources */,
 				C67226301C3F5B6900FAABB5 /* AppDelegate.swift in Sources */,
 				C63EECE11C4F063700794002 /* FeedViewController.swift in Sources */,
@@ -419,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = selfiegram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewgardhouse.selfiegram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = selfiegram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewgardhouse.selfiegram;
 				PRODUCT_NAME = "$(TARGET_NAME)";

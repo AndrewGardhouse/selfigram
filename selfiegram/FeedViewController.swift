@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedViewController: UITableViewController {
+class FeedViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var posts = [Post]()
 
@@ -16,11 +16,11 @@ class FeedViewController: UITableViewController {
         super.viewDidLoad()
         
         let me = User(username: "Andrew", profileImage: UIImage(named: "grumpy-cat")!)
-        let post0 = Post(image: UIImage(named: "grumpy-cat")!, user: me, comment: "Grumpy Cat 0")
-        let post1 = Post(image: UIImage(named: "grumpy-cat")!, user: me, comment: "Grumpy Cat 1")
-        let post2 = Post(image: UIImage(named: "grumpy-cat")!, user: me, comment: "Grumpy Cat 2")
-        let post3 = Post(image: UIImage(named: "grumpy-cat")!, user: me, comment: "Grumpy Cat 3")
-        let post4 = Post(image: UIImage(named: "grumpy-cat")!, user: me, comment: "Grumpy Cat 4")
+        let post0 = Post(image: UIImage(named: "grumpy-cat")!, user: me, comment: "Grumpy Cat 1")
+        let post1 = Post(image: UIImage(named: "grumpy-cat")!, user: me, comment: "Grumpy Cat 2")
+        let post2 = Post(image: UIImage(named: "grumpy-cat")!, user: me, comment: "Grumpy Cat 3")
+        let post3 = Post(image: UIImage(named: "grumpy-cat")!, user: me, comment: "Grumpy Cat 4")
+        let post4 = Post(image: UIImage(named: "grumpy-cat")!, user: me, comment: "Grumpy Cat 5")
         
         posts = [post0, post1, post2, post3, post4]
 
@@ -45,19 +45,60 @@ class FeedViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return posts.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath) as! SelfieCell
         
         let post = posts[indexPath.row]
-        cell.imageView?.image = post.image
-        cell.textLabel?.text = post.comment
+        cell.selfieImageView.image = post.image
+        cell.usernameLabel.text = post.user.username
+        cell.commentLabel.text = post.comment
 
         return cell
     }
 
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        // 1. When the delegate method is returned, it passes along a dictionary called info.
+        //    This dictionary contains multiple things that maybe useful to us.
+        //    We are getting an image from the UIImagePickerControllerOriginalImage key in that dictionary
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            
+            //2. We create a Post object from the image
+            let me = User(username: "Andrew", profileImage: UIImage(named: "grumpy-cat")!)
+            let post = Post(image: image, user: me, comment: "My Selfie")
+            
+            //3. Add post to our posts array
+            //    Adds it to the very top of our array (and therefore our table, when we pi
+            posts.insert(post, atIndex: 0)
+            
+        }
+        
+        //4. We remember to dismiss the Image Picker from our screen.
+        dismissViewControllerAnimated(true, completion: nil)
+        
+        //5. Now that we have added a post, reload our table
+        tableView.reloadData()
+        
+    }
+
+    @IBAction func cameraButtonPressed(sender: AnyObject) {
+        let pickerController = UIImagePickerController()
+        
+        pickerController.delegate = self
+        
+        if TARGET_OS_SIMULATOR == 1 {
+            pickerController.sourceType = .PhotoLibrary
+        } else {
+            pickerController.sourceType = .Camera
+            pickerController.cameraDevice = .Front
+            pickerController.cameraCaptureMode = .Photo
+        }
+        
+        self.presentViewController(pickerController, animated: true, completion: nil)
+    }
 
     /*
     // Override to support conditional editing of the table view.
