@@ -15,7 +15,7 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let task = NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: "https://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=e33dc5502147cf3fd3515aa44224783f&tags=cats")!) { (data, response, error) -> Void in
+        let task = NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: "https://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=e33dc5502147cf3fd3515aa44224783f&tags=rapbattle")!) { (data, response, error) -> Void in
             
             if let jsonUnformatted = try? NSJSONSerialization.JSONObjectWithData(data!, options: []),
                 let json = jsonUnformatted as? [String : AnyObject],

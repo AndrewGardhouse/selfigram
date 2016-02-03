@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // [Optional] Power your app with Local Datastore. For more info, go to
+        // https://parse.com/docs/ios/guide#local-datastore
+        Parse.enableLocalDatastore()
+        
+        // Initialize Parse.
+        Parse.setApplicationId(APIKeys.ApplicationID(),
+            clientKey: APIKeys.ParseKey())
+
+//        let user = PFUser()
+//        let username = "Andrew"
+//        let password = "Gardhouse"
+//        user.username = username
+//        user.password = password
+//        
+//        user.signUpInBackgroundWithBlock { (success, error) -> Void in
+//            if success {
+//                print("successfully signed up")
+//            } else {
+//                PFUser.logInWithUsernameInBackground(username, password: password, block:{
+//                    (user, error) -> Void in
+//                    if let user = user {
+//                        print("Successfully logged in as \(user)")
+//                    }
+//                })
+//            }
+//            
+//        }
+        
         return true
     }
 
