@@ -6,16 +6,20 @@
 //  Copyright © 2016 Andrew Gardhouse. All rights reserved.
 //
 
-import Foundation
-import UIKit
+import Parse
 
-class Post {
-    let imageUrl: NSURL
-    let comment: String
-    let user: User
+class Post : PFObject, PFSubclassing {
+    @NSManaged var image: PFFile
+    @NSManaged var comment: String
+    @NSManaged var user: PFUser
     
-    init(imageUrl: NSURL, user: User, comment: String) {
-        self.imageUrl = imageUrl
+    static func parseClassName() -> String {
+        return "Post"
+    }
+    
+    convenience init(image: PFFile, user: PFUser, comment: String) {
+        self.init()
+        self.image = image
         self.comment = comment
         self.user = user
     }

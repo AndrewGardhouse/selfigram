@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.enableLocalDatastore()
         
         // Initialize Parse.
+        Post.registerSubclass()
         Parse.setApplicationId(APIKeys.ApplicationID(),
             clientKey: APIKeys.ParseKey())
 
