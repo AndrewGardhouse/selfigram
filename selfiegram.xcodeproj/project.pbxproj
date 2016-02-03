@@ -21,7 +21,7 @@
 		C67226451C3F5B6900FAABB5 /* selfiegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67226441C3F5B6900FAABB5 /* selfiegramTests.swift */; };
 		C67226501C3F5B6900FAABB5 /* selfiegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C672264F1C3F5B6900FAABB5 /* selfiegramUITests.swift */; };
 		C6A4910F1C45FFFA00C0383C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A4910E1C45FFFA00C0383C /* ProfileViewController.swift */; };
-		C6B487601C619EBB00421FAD /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B4875F1C619EBB00421FAD /* APIKeys.swift */; };
+		C6B487621C62BABF00421FAD /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B487611C62BABF00421FAD /* APIKeys.swift */; };
 		C6EA954D1C51CE7100DAA302 /* SelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EA954C1C51CE7100DAA302 /* SelfieCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 		C672264F1C3F5B6900FAABB5 /* selfiegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfiegramUITests.swift; sourceTree = "<group>"; };
 		C67226511C3F5B6900FAABB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6A4910E1C45FFFA00C0383C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		C6B4875F1C619EBB00421FAD /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIKeys.swift; path = selfiegram/APIKeys.swift; sourceTree = "<group>"; };
+		C6B487611C62BABF00421FAD /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIKeys.swift; path = selfiegram/APIKeys.swift; sourceTree = "<group>"; };
 		C6EA954C1C51CE7100DAA302 /* SelfieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelfieCell.swift; path = ../SelfieCell.swift; sourceTree = "<group>"; };
 		CEF2A52C10240A3E800F040D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +110,7 @@
 		C67226231C3F5B6900FAABB5 = {
 			isa = PBXGroup;
 			children = (
-				C6B4875F1C619EBB00421FAD /* APIKeys.swift */,
+				C6B487611C62BABF00421FAD /* APIKeys.swift */,
 				C672262E1C3F5B6900FAABB5 /* selfiegram */,
 				C67226431C3F5B6900FAABB5 /* selfiegramTests */,
 				C672264E1C3F5B6900FAABB5 /* selfiegramUITests */,
@@ -366,7 +366,7 @@
 				C67226321C3F5B6900FAABB5 /* ViewController.swift in Sources */,
 				C67226301C3F5B6900FAABB5 /* AppDelegate.swift in Sources */,
 				C63EECE11C4F063700794002 /* FeedViewController.swift in Sources */,
-				C6B487601C619EBB00421FAD /* APIKeys.swift in Sources */,
+				C6B487621C62BABF00421FAD /* APIKeys.swift in Sources */,
 				C66A68631C48B3D600D00E31 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
