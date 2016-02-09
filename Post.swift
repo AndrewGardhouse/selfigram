@@ -12,6 +12,9 @@ class Post : PFObject, PFSubclassing {
     @NSManaged var image: PFFile
     @NSManaged var comment: String
     @NSManaged var user: PFUser
+    var likes: PFRelation! {
+        return relationForKey("likes")
+    }
     
     static func parseClassName() -> String {
         return "Post"

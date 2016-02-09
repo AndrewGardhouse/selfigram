@@ -103,33 +103,7 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
         
         let post = posts[indexPath.row]
         
-        // I've added this line to prevent flickering of images
-        // We are inside the cellForRowAtIndexPath method that gets called everything we layout a cell
-        // Because we are reusing "postCell" cells, a reused cell might have an image already set on it.
-        // This always resets the image to blank, waits for the image to download, and then sets it
-        cell.selfieImageView.image = nil
-        
-//        let task = NSURLSession.sharedSession().downloadTaskWithURL(post.imageUrl) { (url, response, error ) -> Void in
-//            if let imageUrl = url,
-//                let imageData = NSData(contentsOfURL: imageUrl)  {
-//                    dispatch_async(dispatch_get_main_queue(),{ () -> Void in
-//                        cell.selfieImageView.image = UIImage(data: imageData)
-//                    })
-//            }
-//        }
-//        
-//        task.resume()
-        
-        let imageFile = post.image
-        imageFile.getDataInBackgroundWithBlock { (data, error) -> Void in
-            if let data = data {
-                let image = UIImage(data: data)
-                cell.selfieImageView.image = image
-            }
-        }
-        
-        cell.usernameLabel.text = post.user.username
-        cell.commentLabel.text = post.comment
+        cell.post = post
         
         return cell
     }
